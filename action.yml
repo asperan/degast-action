@@ -1,0 +1,11 @@
+name: 'Degast'
+description: 'Retrieve metadata for a new release'
+# inputs
+outputs:
+  nextTag:
+    description: 'The next tag to use'
+  changelog:
+    description: 'The changelog from the last tag'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
